@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="app.css" />
+    <title>PORTFOLIO</title>
+  </head>
+  <body class="font-display max-h-fit max-w-screen">
+    <header
+      class="relative flex max-w-full items-center justify-between bg-[var(--grey-tint)] p-4"
+    >
+      <div class="flex w-40 items-center">
+        <img
+          class="h-14 w-14 rounded-full border-2 border-white"
+          src="/images/profile1.gif"
+          alt="developer img"
+          loading="lazy"
+        />
+        <span
+          class="ml-1 inline-block h-3 w-3 rounded-full bg-green-500"
+        ></span>
+        <h5 class="ml-1 text-[var(--grey-color)]">Available</h5>
+      </div>
+      <nav
+        id="nav-bar"
+        class="absolute top-6 right-3 z-10 flex h-34 w-56 scale-0 flex-col items-center justify-between rounded-lg bg-white/10 backdrop-blur-lg transition-all duration-400 ease-in-out md:flex md:h-fit md:w-52 md:scale-100 md:flex-row"
+      >
+        <a
+          class="relative text-base font-normal before:absolute before:-bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-[var(--grey-color)] before:transition-all before:duration-300 before:ease-linear before:content-[''] hover:before:w-full"
+          href=""
+          >Github</a
+        >
+        <a
+          class="relative text-base font-normal before:absolute before:-bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-[var(--grey-color)] before:transition-all before:duration-300 before:ease-linear before:content-[''] hover:before:w-full"
+          href=""
+          >Linkedin</a
+        ><a
+          class="relative text-base font-normal before:absolute before:-bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-[var(--grey-color)] before:transition-all before:duration-300 before:ease-linear before:content-[''] hover:before:w-full"
+          href=""
+        >
+          Facebook
+        </a>
+      </nav>
+      <div
+        id="menu-icon"
+        class="z-10 flex h-8 w-8 flex-col justify-between md:hidden"
+      >
+        <img
+          src="/images/Animation - 1748300334498.gif"
+          alt="menu icon w-full h-full"
+        />
+      </div>
+    </header>
+    <main>
+      <!-- HERO-SECTION -->
+      <section
+        class="max-w-full rounded-br-[16%] rounded-bl-[16%] bg-[var(--grey-tint)] py-14 text-center"
+      >
+        <div class="relative flex w-full justify-center">
+          <img
+            class="h-34 w-34 rounded-full border-5 border-white grayscale-100"
+            src="/images/portrait.jpg"
+            alt="developer portrait"
+            loading="lazy"
+          />
+          <span
+            class="absolute top-12 left-1/2 block -translate-1/2 translate-x-7 -rotate-20 rounded-3xl bg-white px-4 py-2 text-sm font-normal text-[var(--grey-color)]"
+            >Med Amine &#128075;</span
+          >
+        </div>
+        <h1
+          class="mt-5 line-clamp-3 px-8 text-center text-2xl font-semibold text-[var(--grey-shade)] md:mt-7 md:text-4xl lg:text-5xl"
+        >
+          Pixels obey me. Users love me. I'm your next Front-End wizard.
+        </h1>
+        <a
+          class="mt-8 inline-flex items-center border-2 border-transparent bg-[var(--grey-shade)] px-4 py-2.5 text-base text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--grey-shade)] md:mt-10"
+          href=""
+        >
+          Download cv
+        </a>
+      </section>
+      <!-- SKILLS-SECTION -->
+      <section
+        class="relative z-10 flex min-w-full flex-col space-y-4 overflow-hidden rounded-br-[16%] rounded-bl-[16%] bg-white py-6 md:py-10"
+      >
+        <h2
+          class="relative mt-12 text-center text-xl font-semibold text-[var(--grey-shade)] before:absolute before:top-1/2 before:left-64 before:h-[0.5%] before:w-24 before:bg-gray-400 before:content-[''] after:absolute after:top-1/2 after:right-64 after:h-[1%] after:w-24 after:bg-gray-400 after:content-[''] md:text-3xl md:before:left-20 md:before:w-56 md:after:right-20 md:after:w-56 lg:before:left-20 lg:before:w-80 lg:after:right-20 lg:after:w-80"
+        >
+          My Skills
+        </h2>
+        <div id="slider" class="max-w-full overflow-hidden">
+          <div
+            style="--quantity: 8; --width: 42px; --height: 32px"
+            id="skills-container"
+            class="relative -z-20 m-10 flex h-16 min-w-full md:h-32"
+          >
+            <img
+              style="--position: 1"
+              class="absolute w-12 md:w-28"
+              src="/images/html-5_732212.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 2"
+              class="absolute w-12 md:w-28"
+              src="/images/css-3_732190.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 3"
+              class="absolute w-12 md:w-28"
+              src="/images/icons8-tailwind-css-144 (1).png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 4"
+              class="absolute w-12 md:w-28"
+              src="/images/bootstrap_5968672.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 5"
+              class="absolute w-12 md:w-24"
+              src="/images/js_5968292.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 6"
+              class="absolute w-12 md:w-28"
+              src="/images/icons8-react-native-144.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 7"
+              class="absolute w-12 md:w-28"
+              src="/images/github_2515875.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+            <img
+              style="--position: 8"
+              class="absolute w-12 md:w-28"
+              src="/images/git_4494748.png"
+              alt="skill icon"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS-SECTION -->
+      <section
+        class="relative z-0 max-w-full -translate-y-10 bg-[var(--grey-tint)] pb-12 text-center"
+      >
+        <span
+          class="mt-20 inline-block -rotate-10 border-1 border-[var(--grey-shade)] px-5 py-2.5 text-xl font-semibold text-[var(--grey-shade)] md:mt-28 md:px-7 md:py-4 md:text-3xl"
+          >Projects &#128188</span
+        >
+        <div
+          class="grid max-w-full grid-cols-1 gap-3 px-4 py-10 md:grid-cols-2 md:py-14 lg:grid-cols-4"
+        >
+          <div class="flex w-full flex-col rounded-2xl bg-white p-6">
+            <img class="rounded-2xl" src="/images/1788.jpg" alt="project" />
+            <p
+              class="mt-3 text-left text-lg font-normal text-[var(--grey-color)]"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              vitae amet soluta consequuntur nobis ea ut ipsa distinctio autem
+              laborum corporis iure dignissimos sunt placeat itaque rem, sequi
+              eos vero.
+            </p>
+            <a
+              class="mt-4 inline-block w-fit border-2 border-transparent bg-[var(--grey-shade)] px-5 py-2.5 text-base text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--grey-shade)]"
+              href=""
+              >View demo</a
+            >
+          </div>
+          <div class="flex w-full flex-col rounded-2xl bg-white p-6">
+            <img
+              class="rounded-2xl"
+              src="/images/1788.jpg"
+              alt="product img"
+              loading="lazy"
+            />
+            <p
+              class="mt-3 text-left text-lg font-normal text-[var(--grey-color)]"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              vitae amet soluta consequuntur nobis ea ut ipsa distinctio autem
+              laborum corporis iure dignissimos sunt placeat itaque rem, sequi
+              eos vero.
+            </p>
+            <a
+              class="mt-4 inline-block w-fit border-2 border-transparent bg-[var(--grey-shade)] px-5 py-2.5 text-base text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--grey-shade)]"
+              href=""
+              >View demo</a
+            >
+          </div>
+          <div class="flex w-full flex-col rounded-2xl bg-white p-6">
+            <img
+              class="rounded-2xl"
+              src="/images/1788.jpg"
+              alt="product img"
+              loading="lazy"
+            />
+            <p
+              class="mt-3 text-left text-lg font-normal text-[var(--grey-color)]"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              vitae amet soluta consequuntur nobis ea ut ipsa distinctio autem
+              laborum corporis iure dignissimos sunt placeat itaque rem, sequi
+              eos vero.
+            </p>
+            <a
+              class="mt-4 inline-block w-fit border-2 border-transparent bg-[var(--grey-shade)] px-5 py-2.5 text-base text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--grey-shade)]"
+              href=""
+              >View demo</a
+            >
+          </div>
+          <div class="flex w-full flex-col rounded-2xl bg-white p-6">
+            <img
+              class="rounded-2xl"
+              src="/images/1788.jpg"
+              alt="product img"
+              loading="lazy"
+            />
+            <p
+              class="mt-3 text-left text-lg font-normal text-[var(--grey-color)]"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              vitae amet soluta consequuntur nobis ea ut ipsa distinctio autem
+              laborum corporis iure dignissimos sunt placeat itaque rem, sequi
+              eos vero.
+            </p>
+            <a
+              class="mt-4 inline-block w-fit border-2 border-transparent bg-[var(--grey-shade)] px-5 py-2.5 text-base text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--grey-shade)]"
+              href=""
+              >View demo</a
+            >
+          </div>
+          <div class="flex w-full flex-col rounded-2xl bg-white p-6">
+            <img
+              class="rounded-2xl"
+              src="/images/1788.jpg"
+              alt="product img"
+              loading="lazy"
+            />
+            <p
+              class="mt-3 text-left text-lg font-normal text-[var(--grey-color)]"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              vitae amet soluta consequuntur nobis ea ut ipsa distinctio autem
+              laborum corporis iure dignissimos sunt placeat itaque rem, sequi
+              eos vero.
+            </p>
+            <a
+              class="mt-4 inline-block w-fit border-2 border-transparent bg-[var(--grey-shade)] px-5 py-2.5 text-base text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--grey-shade)]"
+              href=""
+              >View demo</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- CTA-SECTION -->
+      <section
+        class="relative z-10 flex max-w-full -translate-y-28 flex-col items-center rounded-tl-[16%] rounded-tr-[16%] bg-white px-4"
+      >
+        <img
+          class="mt-22 w-28 rounded-full bg-[var(--grey-tint)] p-3 md:w-44"
+          src="/images/partnership-handshake_9016351.png"
+          alt="shaking hand"
+        />
+        <h3
+          class="mt-8 w-fit text-center text-2xl font-semibold text-[var(--grey-shade)] md:mt-12 md:text-3xl lg:text-4xl"
+        >
+          Tell me about your<br />
+          next project.
+        </h3>
+        <div class="mt-10 flex w-full justify-center md:mt-14">
+          <a
+            class="mr-1.5 inline-block border-2 border-transparent bg-[var(--grey-shade)] px-5 py-2.5 text-base font-normal text-white transition-all duration-300 ease-linear hover:border-[var(--grey-shade)] hover:bg-transparent hover:text-[var(--color-shade)]"
+            href=""
+            >Email me</a
+          ><a
+            class="ml-1.5 inline-block border-2 border-transparent bg-[var(--grey-tint)] px-5 py-2.5 text-base font-normal text-[var(--grey-shade)] transition-all duration-300 ease-linear hover:border-transparent hover:bg-[var(--grey-shade)] hover:text-white"
+            href=""
+            >Whatsapp</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex h-12 max-w-full items-start justify-center bg-white p-8"
+    >
+      <a
+        class="inline-flex items-center transition-all duration-300 ease-in-out hover:scale-105"
+        href=""
+        ><img
+          class="mr-1 w-5"
+          src="/images/icons8-github-50.png"
+          alt="github icon"
+        />Github</a
+      >
+      <a
+        class="inline-flex items-center transition-all duration-300 ease-linear hover:scale-105"
+        href=""
+        ><img
+          class="mr-1 ml-2 w-5"
+          src="/images/icons8-linkedin-50.png"
+          alt="linkedin icon"
+        />Linkedin</a
+      >
+      <a
+        class="inline-flex items-center transition-all duration-300 ease-linear hover:scale-105"
+        href=""
+        ><img
+          class="mr-1 ml-2 w-5"
+          src="/images/icons8-facebook-50.png"
+          alt="facebook icon"
+        />Facebook</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+#skills-container {
+  min-width: calc(var(--width) * var(--quantity));
+}
+
+#skills-container img {
+  height: 100%;
+  animation: autoSlide 12s linear infinite;
+  animation-delay: calc((12s / var(--quantity)) * (var(--position) - 1));
+  left: 110%;
+}
+
+@keyframes autoSlide {
+  from {
+    left: 110%;
+  }
+  to {
+    left: -30%;
+  }
+}
+#slider:hover #skills-container img {
+  animation-play-state: paused;
+}
